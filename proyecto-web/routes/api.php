@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+//Quiero usar el controlador asi que lo importo, se importa con namespace/NombreClase
+use App\Http\Controllers\ClientesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+//La ruta puede ser post o get (post para enviar cosas a la bd, get para obtener)
+Route::get("regiones/get", [ClientesController::class, "getRegiones"]);
+//Route::get("url", [controlador::class, "metodo"]);

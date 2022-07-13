@@ -1,18 +1,67 @@
+/* MENU PRINCIPAL HEADER */
 .BarraMenuPrincipal{
     background-color: #1c1c1c;
-
 }
 
-.color-letra-menu {
+.letra-menu {
     color: white;
-
+    font-weight:  bolder;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 10px;
+    text-decoration: none;
 
 }
 
+.activo {
+    color: #1259f3
+}
+
+
+.boton-cerrar-sesion{
+    background-color: #1259f3;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+/* LOGO */
 .logo {
 
     width: auto;
     height: 80px;
+}
 
+/* FORMULARIO REGISTRO CLIENTE */
+
+.barraformulario{
+    background-color: #1259f3;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
 
 }
+
+/* TABLA DE CLIENTES */
+
+.tabla-cliente{
+    background-color: #212529;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+   ;
+
+}
+
+.espacio-tabla{
+
+    padding:25px;
+}
+
+
