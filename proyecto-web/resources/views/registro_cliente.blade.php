@@ -18,7 +18,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="rut-txt" class="form-label">RUT</label>
-                        <input type="text" id="rut-txt" class="form-control">
+                        <input type="text" class="inputs form-control" name="cliente" id="cliente"
+                        maxlength="12" onkeyup="formatCliente(this)">
                     </div>
                     <div class="mb-3">
                         <label for="fono-txt" class="form-label">Telefono</label>
@@ -40,7 +41,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-grid gap-1">
-                    <button type="button" class="btn btn-primary">Registrar</button>
+                    <button id="registrar-btn" type="button" class="btn btn-primary">Registrar</button>
                 </div>
             </div>
         </div>
@@ -49,5 +50,6 @@
 
 <!-- Esto define el contenido de la sección javascript del master -->
 @section("javascript")
+    <script src="{{asset('js/servicios/clientesService.js')}}"></script>
     <script src="{{asset('js/registro_cliente.js')}}"></script>
 @endsection

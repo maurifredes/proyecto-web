@@ -23,3 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //La ruta puede ser post o get (post para enviar cosas a la bd, get para obtener)
 Route::get("regiones/get", [ClientesController::class, "getRegiones"]);
 //Route::get("url", [controlador::class, "metodo"]);
+
+Route::get("clientes/get", [ClientesController::class, "getClientes"]);
+
+Route::post("clientes/post", [ClientesController::class, "crearCliente"]);
+Route::post("clientes/delete", [ClientesController::class, "eliminarCliente"]);
+
+

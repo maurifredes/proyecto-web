@@ -15,10 +15,14 @@
                     <th scope="col">CORREO</th>
                   </tr>
                 </thead>
-                <tbody>
-              </tbody>
+                <tbody id="tbody-cliente">
+                </tbody>
               </table>
-
         </div>
     </div>
+@endsection
+
+@section("javascript")
+    <script src="{{asset('js/servicios/clientesService.js')}}"></script>
+    <script src="{{asset('js/ver_clientes.js')}}"></script>
 @endsection
